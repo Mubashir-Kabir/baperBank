@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center font-semibold text-4xl my-8">
+        Welcome to <span class="text-5xl font-bold">Baper Bank</span>
+      </h1>
+      <hr />
+    </header>
+    <main>
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+          <div
+            class="bg-purple-400 p-4 text-center text-2xl font-semibold rounded-md"
+          >
+            <h3>Total Diposit</h3>
+            <p class="text-4xl font-bold mt-3">
+              $<span id="totalDiposit">00</span>
+            </p>
+          </div>
+          <div
+            class="bg-pink-400 p-4 text-center text-2xl font-semibold rounded-md"
+          >
+            <h3>Total Withdraw</h3>
+            <p class="text-4xl font-bold mt-3">
+              $<span id="totalWithdraw">00</span>
+            </p>
+          </div>
+          <div
+            class="bg-lime-400 p-4 text-center text-2xl font-semibold rounded-md"
+          >
+            <h3>Balance</h3>
+            <p class="text-4xl font-bold mt-3">
+              $<span id="balance">1240</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+          <div
+            class="bg-red-400 p-4 text-center text-2xl font-semibold rounded-md"
+          >
+            <h3>Diposit</h3>
+            <input
+              id="dipositField"
+              class="px-2 py-1 text-center rounded-md mt-2"
+              type="text"
+            />
+            <button
+              id="dipositBtn"
+              class="block bg-green-800 hover:bg-green-700 px-4 text-white rounded-md mt-3 mx-auto py-1"
+            >
+              Diposit
+            </button>
+          </div>
+          <div
+            class="bg-yellow-400 p-4 text-center text-2xl font-semibold rounded-md"
+          >
+            <h3>Withdraw</h3>
+            <input
+              id="withdrawField"
+              class="px-2 py-1 text-center rounded-md mt-2"
+              type="text"
+            />
+            <button
+              id="withdrawBtn"
+              class="block bg-sky-800 hover:bg-sky-700 px-4 text-white rounded-md mt-3 mx-auto py-1"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/withdraw.js"></script>
+    <script src="./js/diposit.js"></script>
+  </body>
+</html>
